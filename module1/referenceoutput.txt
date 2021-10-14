@@ -1,0 +1,130 @@
+{'href': 'https://api.spotify.com/v1/users/samellgass/playlists?offset=0&limit=5', 'items':
+    [
+        {'collaborative': False, 'description': 'A blend of music for catherinebauer and Sam. Updates daily.', 'external_urls':
+            {'spotify': 'https://open.spotify.com/playlist/37i9dQZF1EJt9doMBuBd0N'},
+             'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1EJt9doMBuBd0N',
+             'id': '37i9dQZF1EJt9doMBuBd0N',
+            'images':
+                [{'height': None, 'url': 'https://blend-playlist-covers.spotifycdn.com/v2/blend_LARGE-forest-seafoam-en.jpg', 'width': None}],
+            'name': 'catherinebauer + Sam', 'owner':
+            {'display_name': 'Spotify', 'external_urls':
+                    {'spotify': 'https://open.spotify.com/user/spotify'},
+                     'href': 'https://api.spotify.com/v1/users/spotify', 'id': 'spotify', 'type': 'user', 'uri': 'spotify:user:spotify'},
+            'primary_color': None, 'public': False, 'snapshot_id': 'MCwwMDAwMDAwMDJhNzI2MDQ1NjdkMmNkMDU2OWE1NWJkZTY5ZWVlYjcz',
+            'tracks':
+                    {'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1EJt9doMBuBd0N/tracks', 'total': 0},
+            'type': 'playlist', 'uri': 'spotify:playlist:37i9dQZF1EJt9doMBuBd0N'},
+        {'collaborative': False,
+            'description': 'The coolest indie tunes from around the globe, all genres from Electronics to Rock, only one condition... no sadness!',
+            'external_urls':
+                {'spotify': 'https://open.spotify.com/playlist/3Dtw0HtZnPormnjaP3Dn8w'},
+            'href': 'https://api.spotify.com/v1/playlists/3Dtw0HtZnPormnjaP3Dn8w',
+            'id': '3Dtw0HtZnPormnjaP3Dn8w',
+            'images':
+                [{'height': None, 'url': 'https://i.scdn.co/image/ab67706c0000bebb10ca078cc1495e80457ba5ef', 'width': None}],
+            'name': 'Only Good Indie Things',
+            'owner':
+                {'display_name': 'Daniele Guarnera',
+                'external_urls':
+                    {'spotify': 'https://open.spotify.com/user/21ofwii6rsoktylwphluomvhy'},
+                'href': 'https://api.spotify.com/v1/users/21ofwii6rsoktylwphluomvhy',
+                'id': '21ofwii6rsoktylwphluomvhy',
+                'type': 'user',
+                'uri': 'spotify:user:21ofwii6rsoktylwphluomvhy'},
+            'primary_color': None,
+            'public': True,
+            'snapshot_id': 'MTQwLGZkMDM3ZjU0ZWNkYTBmYWNkYTc2Yzg3MjQ3MWU2M2RkYjljNWUwOWE=',
+            'tracks':
+                {'href': 'https://api.spotify.com/v1/playlists/3Dtw0HtZnPormnjaP3Dn8w/tracks', 'total': 50},
+            'type': 'playlist',
+            'uri': 'spotify:playlist:3Dtw0HtZnPormnjaP3Dn8w'},
+        {'collaborative': False,
+            'description': '',
+             'external_urls':
+            {'spotify': 'https://open.spotify.com/playlist/3ycbGxN9b34eoi0uPuOV2X'},
+             'href': 'https://api.spotify.com/v1/playlists/3ycbGxN9b34eoi0uPuOV2X',
+             'id': '3ycbGxN9b34eoi0uPuOV2X',
+            'images':
+            [{'height': 640, 'url': 'https://mosaic.scdn.co/640/ab67616d0000b2733efb3fcedd7a642717c49b42ab67616d0000b2733f9de2a1db5213ff8e3c0517ab67616d0000b273598edea9f8828d7c36c3923bab67616d0000b273b5629a64cf8516a28c8bba2e', 'width': 640},
+            {'height': 300, 'url': 'https://mosaic.scdn.co/300/ab67616d0000b2733efb3fcedd7a642717c49b42ab67616d0000b2733f9de2a1db5213ff8e3c0517ab67616d0000b273598edea9f8828d7c36c3923bab67616d0000b273b5629a64cf8516a28c8bba2e', 'width': 300},
+            {'height': 60, 'url': 'https://mosaic.scdn.co/60/ab67616d0000b2733efb3fcedd7a642717c49b42ab67616d0000b2733f9de2a1db5213ff8e3c0517ab67616d0000b273598edea9f8828d7c36c3923bab67616d0000b273b5629a64cf8516a28c8bba2e', 'width': 60}],
+            'name': 'October Exploration',
+            'owner': {'display_name': 'Sam Ellgass',
+            'external_urls':
+            {'spotify': 'https://open.spotify.com/user/samellgass'},
+            'href': 'https://api.spotify.com/v1/users/samellgass',
+            'id': 'samellgass',
+            'type': 'user',
+            'uri': 'spotify:user:samellgass'},
+            'primary_color': None,
+            'public': True,
+            'snapshot_id': 'MzMsNzVlNGNlMWMxY2I4ZWYwNTZkZTg5NDQwYjgwNTNlYmVhNWIxM2U1Nw==',
+            'tracks':
+                {'href': 'https://api.spotify.com/v1/playlists/3ycbGxN9b34eoi0uPuOV2X/tracks', 'total': 32},
+                'type': 'playlist',
+                'uri': 'spotify:playlist:3ycbGxN9b34eoi0uPuOV2X'},
+        {'collaborative': False,
+            'description': '',
+            external_urls':
+                {'spotify': 'https://open.spotify.com/playlist/3W1IB3Xzff33bujvhOHQHp'},
+            'href': 'https://api.spotify.com/v1/playlists/3W1IB3Xzff33bujvhOHQHp',
+            'id': '3W1IB3Xzff33bujvhOHQHp',
+            'images':
+                [{'height': 640, 'url': 'https://mosaic.scdn.co/640/ab67616d0000b273215f337129b661ff62b29cf6ab67616d0000b2735f32163acb1e09aa14deb007ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273d6c9b06173aa0faf1edbae66', 'width': 640},
+                {'height': 300, 'url': 'https://mosaic.scdn.co/300/ab67616d0000b273215f337129b661ff62b29cf6ab67616d0000b2735f32163acb1e09aa14deb007ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273d6c9b06173aa0faf1edbae66', 'width': 300},
+                {'height': 60, 'url': 'https://mosaic.scdn.co/60/ab67616d0000b273215f337129b661ff62b29cf6ab67616d0000b2735f32163acb1e09aa14deb007ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273d6c9b06173aa0faf1edbae66', 'width': 60}],
+            'name': 'Heterogeneous Mixture September ',
+            'owner': {'display_name': 'Sam Ellgass',
+            'external_urls': {'spotify': 'https://open.spotify.com/user/samellgass'},
+            'href': 'https://api.spotify.com/v1/users/samellgass', 'id': 'samellgass',
+            'type': 'user', 'uri': 'spotify:user:samellgass'},
+            'primary_color': None, 'public': True,
+            'snapshot_id': 'OTgsMjg3OWRmODg0MDk5ZDdlYWYzNjIwZmVkMGRmMmE2OWMxZDc3MGQwZA==',
+            'tracks':
+                {'href': 'https://api.spotify.com/v1/playlists/3W1IB3Xzff33bujvhOHQHp/tracks', 'total': 97},
+            'type': 'playlist', 'uri': 'spotify:playlist:3W1IB3Xzff33bujvhOHQHp'},
+        {'collaborative': False, 'description': '',
+            'external_urls':
+                {'spotify': 'https://open.spotify.com/playlist/6XcRSnrvQjPAZ91V8zzY4Y'},
+            'href': 'https://api.spotify.com/v1/playlists/6XcRSnrvQjPAZ91V8zzY4Y', '
+            id': '6XcRSnrvQjPAZ91V8zzY4Y',
+            'images':
+                [{'height': 640, 'url': 'https://mosaic.scdn.co/640/ab67616d0000b273ad8f67f5f03d44e215deea50ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273dc535fcdef95c1e8f70ff019ab67616d0000b273fc1bc1cf80c431c2bdbde601', 'width': 640},
+                 {'height': 300, 'url': 'https://mosaic.scdn.co/300/ab67616d0000b273ad8f67f5f03d44e215deea50ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273dc535fcdef95c1e8f70ff019ab67616d0000b273fc1bc1cf80c431c2bdbde601', 'width': 300},
+                 {'height': 60, 'url': 'https://mosaic.scdn.co/60/ab67616d0000b273ad8f67f5f03d44e215deea50ab67616d0000b273ce93b2fc719ae92dacec2b4bab67616d0000b273dc535fcdef95c1e8f70ff019ab67616d0000b273fc1bc1cf80c431c2bdbde601', 'width': 60}],
+            'name': 'Indie Movie AUGUST',
+            'owner':
+                {'display_name': 'Sam Ellgass',
+                'external_urls': {'spotify': 'https://open.spotify.com/user/samellgass'},
+                'href': 'https://api.spotify.com/v1/users/samellgass',
+                'id': 'samellgass', 'type': 'user', 'uri': 'spotify:user:samellgass'},
+            'primary_color': None, 'public': True, 'snapshot_id': 'MzUsNDgxZjNhMzJkNGEwOTJlMjllNzU1OWJkYzJhNTBhODBjNjQ2YjgyZA==',
+            'tracks': {'href': 'https://api.spotify.com/v1/playlists/6XcRSnrvQjPAZ91V8zzY4Y/tracks', 'total': 34},
+            'type': 'playlist', 'uri': 'spotify:playlist:6XcRSnrvQjPAZ91V8zzY4Y'}], 'limit': 5,
+            'next': 'https://api.spotify.com/v1/users/samellgass/playlists?offset=5&limit=5',
+            'offset': 0, 'previous': None,
+            'total': 336}
+
+
+OUTPUT OF CALL TO PROCESS ALL SONGS
+[{'added_at': '2021-09-24T15:36:17Z',
+'added_by':
+    {'external_urls':
+    {'spotify': 'https://open.spotify.com/user/samellgass'}, 'href': 'https://api.spotify.com/v1/users/samellgass', 'id': 'samellgass', 'type': 'user', 'uri': 'spotify:user:samellgass'},
+     'is_local': False, 'primary_color': None,
+     'track':
+        {'album':
+            {'album_type': 'album', 'artists': [{'external_urls': {'spotify': 'https://open.spotify.com/artist/1anAI9P9iSzc9qzLv6AtHZ'},
+            'href': 'https://api.spotify.com/v1/artists/1anAI9P9iSzc9qzLv6AtHZ',
+            'id': '1anAI9P9iSzc9qzLv6AtHZ',
+            'name': 'Sure Sure',
+            'type': 'artist',
+            'uri': 'spotify:artist:1anAI9P9iSzc9qzLv6AtHZ'}],
+            'available_markets': ['AD', 'AE', 'AG', 'AL', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BN', 'BO', 'BR', 'BS', 'BT', 'BW', 'BY', 'BZ', 'CA', 'CH', 'CI', 'CL', 'CM', 'CO', 'CR', 'CV', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG', 'ES', 'FI', 'FJ', 'FM', 'FR', 'GA', 'GB', 'GD', 'GE', 'GH', 'GM', 'GN', 'GQ', 'GR', 'GT', 'GW', 'GY', 'HK', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KR', 'KW', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'MA', 'MC', 'MD', 'ME', 'MG', 'MH', 'MK', 'ML', 'MN', 'MO', 'MR', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NE', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NZ', 'OM', 'PA', 'PE', 'PG', 'PH', 'PK', 'PL', 'PS', 'PT', 'PW', 'PY', 'QA', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SE', 'SG', 'SI', 'SK', 'SL', 'SM', 'SN', 'SR', 'ST', 'SV', 'SZ', 'TD', 'TG', 'TH', 'TL', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'US', 'UY', 'UZ', 'VC', 'VN', 'VU', 'WS', 'XK', 'ZA', 'ZM', 'ZW'],
+            'external_urls': {'spotify': 'https://open.spotify.com/album/5LJzP85Zn7B2IAt7zhLImG'},
+            'href': 'https://api.spotify.com/v1/albums/5LJzP85Zn7B2IAt7zhLImG',
+            'id': '5LJzP85Zn7B2IAt7zhLImG', 'images': [{'height': 640, 'url': 'https://i.scdn.co/image/ab67616d0000b2733f9de2a1db5213ff8e3c0517', 'width': 640}, {'height': 300, 'url': 'https://i.scdn.co/image/ab67616d00001e023f9de2a1db5213ff8e3c0517', 'width': 300}, {'height': 64, 'url': 'https://i.scdn.co/image/ab67616d000048513f9de2a1db5213ff8e3c0517', 'width': 64}], 'name': "What's It Like?", 'release_date': '2019-06-27', 'release_date_precision': 'day', 'total_tracks': 8, 'type': 'album', 'uri': 'spotify:album:5LJzP85Zn7B2IAt7zhLImG'}, 'artists': [{'external_urls': {'spotify': 'https://open.spotify.com/artist/1anAI9P9iSzc9qzLv6AtHZ'}, 'href': 'https://api.spotify.com/v1/artists/1anAI9P9iSzc9qzLv6AtHZ', 'id': '1anAI9P9iSzc9qzLv6AtHZ', 'name': 'Sure Sure', 'type': 'artist', 'uri': 'spotify:artist:1anAI9P9iSzc9qzLv6AtHZ'}], 'available_markets': ['AD', 'AE', 'AG', 'AL', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BN', 'BO', 'BR', 'BS', 'BT', 'BW', 'BY', 'BZ', 'CA', 'CH', 'CI', 'CL', 'CM', 'CO', 'CR', 'CV', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG', 'ES', 'FI', 'FJ', 'FM', 'FR', 'GA', 'GB', 'GD', 'GE', 'GH', 'GM', 'GN', 'GQ', 'GR', 'GT', 'GW', 'GY', 'HK', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KR', 'KW', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'MA', 'MC', 'MD', 'ME', 'MG', 'MH', 'MK', 'ML', 'MN', 'MO', 'MR', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NE', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NZ', 'OM', 'PA', 'PE', 'PG', 'PH', 'PK', 'PL', 'PS', 'PT', 'PW', 'PY', 'QA', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SE', 'SG', 'SI', 'SK', 'SL', 'SM', 'SN', 'SR', 'ST', 'SV', 'SZ', 'TD', 'TG', 'TH', 'TL', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'US', 'UY', 'UZ', 'VC', 'VN', 'VU', 'WS', 'XK', 'ZA', 'ZM', 'ZW'], 'disc_number': 1, 'duration_ms': 211146, 'episode': False, 'explicit': False, 'external_ids': {'isrc': 'SE5VF1801417'}, 'external_urls': {'spotify': 'https://open.spotify.com/track/7oiZRx7OZbUAYUiYeFTXrf'}, 'href': 'https://api.spotify.com/v1/tracks/7oiZRx7OZbUAYUiYeFTXrf', 'id': '7oiZRx7OZbUAYUiYeFTXrf', 'is_local': False, 'name': 'Warm Animal', 'popularity': 60, 'preview_url': 'https://p.scdn.co/mp3-preview/db45eae651bc6ee653d42abafffd231d226bc7ca?cid=2b90b67f37914c32ad094916156f44aa', 'track': True, 'track_number': 5, 'type': 'track', 'uri': 'spotify:track:7oiZRx7OZbUAYUiYeFTXrf'},
+            'video_thumbnail': {'url': None}},
+
+
+{'added_at': '2021-09-24T15:36:17Z', 'added_by': {'external_urls': {'spotify': 'https://open.spotify.com/user/samellgass'}, 'href': 'https://api.spotify.com/v1/users/samellgass', 'id': 'samellgass', 'type': 'user', 'uri': 'spotify:user:samellgass'}, 'is_local': False, 'primary_color': None, 'track': {'album': {'album_type': 'album', 'artists': [{'external_urls': {'spotify': 'https://open.spotify.com/artist/1anAI9P9iSzc9qzLv6AtHZ'}, 'href': 'https://api.spotify.com/v1/artists/1anAI9P9iSzc9qzLv6AtHZ', 'id': '1anAI9P9iSzc9qzLv6AtHZ', 'name': 'Sure Sure', 'type': 'artist', 'uri': 'spotify:artist:1anAI9P9iSzc9qzLv6AtHZ'}], 'available_markets': ['AD', 'AE', 'AG', 'AL', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BN', 'BO', 'BR', 'BS', 'BT', 'BW', 'BY', 'BZ', 'CA', 'CH', 'CI', 'CL', 'CM', 'CO', 'CR', 'CV', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG', 'ES', 'FI', 'FJ', 'FM', 'FR', 'GA', 'GB', 'GD', 'GE', 'GH', 'GM', 'GN', 'GQ', 'GR', 'GT', 'GW', 'GY', 'HK', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KR', 'KW', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'MA', 'MC', 'MD', 'ME', 'MG', 'MH', 'MK', 'ML', 'MN', 'MO', 'MR', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NE', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NZ', 'OM', 'PA', 'PE', 'PG', 'PH', 'PK', 'PL', 'PS', 'PT', 'PW', 'PY', 'QA', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SE', 'SG', 'SI', 'SK', 'SL', 'SM', 'SN', 'SR', 'ST', 'SV', 'SZ', 'TD', 'TG', 'TH', 'TL', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'US', 'UY', 'UZ', 'VC', 'VN', 'VU', 'WS', 'XK', 'ZA', 'ZM', 'ZW'], 'external_urls': {'spotify': 'https://open.spotify.com/album/5LJzP85Zn7B2IAt7zhLImG'}, 'href': 'https://api.spotify.com/v1/albums/5LJzP85Zn7B2IAt7zhLImG', 'id': '5LJzP85Zn7B2IAt7zhLImG', 'images': [{'height': 640, 'url': 'https://i.scdn.co/image/ab67616d0000b2733f9de2a1db5213ff8e3c0517', 'width': 640}, {'height': 300, 'url': 'https://i.scdn.co/image/ab67616d00001e023f9de2a1db5213ff8e3c0517', 'width': 300}, {'height': 64, 'url': 'https://i.scdn.co/image/ab67616d000048513f9de2a1db5213ff8e3c0517', 'width': 64}], 'name': "What's It Like?", 'release_date': '2019-06-27', 'release_date_precision': 'day', 'total_tracks': 8, 'type': 'album', 'uri': 'spotify:album:5LJzP85Zn7B2IAt7zhLImG'}, 'artists': [{'external_urls': {'spotify': 'https://open.spotify.com/artist/1anAI9P9iSzc9qzLv6AtHZ'}, 'href': 'https://api.spotify.com/v1/artists/1anAI9P9iSzc9qzLv6AtHZ', 'id': '1anAI9P9iSzc9qzLv6AtHZ', 'name': 'Sure Sure', 'type': 'artist', 'uri': 'spotify:artist:1anAI9P9iSzc9qzLv6AtHZ'}], 'available_markets': ['AD', 'AE', 'AG', 'AL', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BN', 'BO', 'BR', 'BS', 'BT', 'BW', 'BY', 'BZ', 'CA', 'CH', 'CI', 'CL', 'CM', 'CO', 'CR', 'CV', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG', 'ES', 'FI', 'FJ', 'FM', 'FR', 'GA', 'GB', 'GD', 'GE', 'GH', 'GM', 'GN', 'GQ', 'GR', 'GT', 'GW', 'GY', 'HK', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IN', 'IS', 'IT', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KR', 'KW', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'MA', 'MC', 'MD', 'ME', 'MG', 'MH', 'MK', 'ML', 'MN', 'MO', 'MR', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NE', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NZ', 'OM', 'PA', 'PE', 'PG', 'PH', 'PK', 'PL', 'PS', 'PT', 'PW', 'PY', 'QA', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SE', 'SG', 'SI', 'SK', 'SL', 'SM', 'SN', 'SR', 'ST', 'SV', 'SZ', 'TD', 'TG', 'TH', 'TL', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'US', 'UY', 'UZ', 'VC', 'VN', 'VU', 'WS', 'XK', 'ZA', 'ZM', 'ZW'], 'disc_number': 1, 'duration_ms': 211146, 'episode': False, 'explicit': False, 'external_ids': {'isrc': 'SE5VF1801417'}, 'external_urls': {'spotify': 'https://open.spotify.com/track/7oiZRx7OZbUAYUiYeFTXrf'}, 'href': 'https://api.spotify.com/v1/tracks/7oiZRx7OZbUAYUiYeFTXrf', 'id': '7oiZRx7OZbUAYUiYeFTXrf', 'is_local': False, 'name': 'Warm Animal', 'popularity': 60, 'preview_url': 'https://p.scdn.co/mp3-preview/db45eae651bc6ee653d42abafffd231d226bc7ca?cid=2b90b67f37914c32ad094916156f44aa', 'track': True, 'track_number': 5, 'type': 'track', 'uri': 'spotify:track:7oiZRx7OZbUAYUiYeFTXrf'}, 'video_thumbnail': {'url': None}}

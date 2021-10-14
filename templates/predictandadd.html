@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h1> {% block title %} The best matches for that song are:{% endblock %}</h1>
+        <!-- HERE WILL EXIST A TEXT BOX THAT, UPON RECEIVING A VALID SPOTIFY URL, WILL RUN THE PREDICTION ENGINE-->
+        {% for package in packages %} 
+        <ul class="a" id="widetwocorners1">
+            <h2>{{ package['name'] }}</h2>
+            <p> This playlist was a {{ package['confidence'] }} % match.</p>
+            <button class="button">
+                <a href= "{{ url_for('addtoplaylist', pid=package['pid']) }}">Add to Playlist</a>
+                <!-- FIX THIS LINK TO GO TO THE FUNCTION TO DO IT -->
+            </button>
+        </ul>
+        {% endfor %}
+
+{% endblock %}

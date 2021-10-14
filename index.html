@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h1> {% block title %} Welcome to the Spotify Playlist Matcher Tool!{% endblock %}</h1>
+        <p> Here will be a description of the tool, explaining in list form the options</p>
+        <ul>
+            <li> Take any song you like - but don't know what playlist to add it to</li>
+            <li> Use Machine Learning to see which playlists it matches best on </li>
+            <li> Add it to that playlist with the click of a button!</li>
+        </ul>
+
+        <button>
+            <a href= "{{ url_for('authorize') }}">Log In to Spotify</a>
+        </button>
+{% endblock %}

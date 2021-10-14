@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h1> {% block title %} You Have Successfully Signed In and the app has processed your playlists.{% endblock %}</h1>
+        <!-- HERE WILL EXIST A TEXT BOX THAT, UPON RECEIVING A VALID SPOTIFY URL, WILL RUN THE PREDICTION ENGINE-->
+        <h1> Paste the URL of a Spotify song to see which playlists it best fits in!</h1>
+        <form action="{{ url_for('predictandadd') }}" method="get" target="_self">
+            <label for="trackurl">Track URL</label>
+            <br>
+            <input type="text" id="trackurl" name="trackurl"
+                    placeholder="Type track URL here">
+            <br>
+            <label for="num">Number of Playlists to Show</label>
+            <br>
+            <input type="text" id="num" name="num"
+                    value="5">
+            <input type="submit" value="Match">
+        </form>
+{% endblock %}

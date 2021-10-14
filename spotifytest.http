@@ -1,0 +1,15 @@
+# AUTHENTICATION
+GET https://accounts.spotify.com/authorize?client_id=2b90b67f37914c32ad094916156f44aa&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2F~samuelellgass%2F
+
+
+# Pieces:
+# - URI = 
+# - client_id=2b90b67f37914c32ad094916156f44aa
+# - response_type=code
+# redirect_uri= http%3A%2F%2Flocalhost%2F~samuelellgass%2F
+# WEB PAGE TO SEND TO AFTER SUCCESS. MUST BE LISTED IN WEB DEVELOPER PROFILE IN SPOTIFY
+# potential: http://localhost:8888/callback
+# show_dialog=false (is the default)
+
+# Then follow with POST to retrieve authentication token
+POST https://accounts.spotify.com/api/token?grant_type=”authorization_code”&code=AQBQJTk--pNhDvMWmOpBobPofZmQ8oAdx4kXkOPtbZ9VZfIOKUUGGhhAXaOgE0WGjE2dbK0s47sD2YD0GvEhJhfeNIz-b_x0ZRjmqgAg0wz79c6n-hnB0M-YJ-Na1nCi_8_QwJYozbeTva5YmIUWjBFYf4U9io86BhjHgn3yL2yi2SiH&redirect_uri=http%3A%2F%2Flocalhost%2F~samuelellgass%2F&client_id=2b90b67f37914c32ad094916156f44aa&client_secret=c50524d981934e4c9e1dd88bcc2efacf 
