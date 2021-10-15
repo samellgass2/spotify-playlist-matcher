@@ -47,6 +47,10 @@ def get_token():
 
 
 @app.route('/')
+def landingpage():
+    return render_template('index.html')
+
+@app.route('/authorize')
 def authorize():
     """
     Begins the authorization pipeline
