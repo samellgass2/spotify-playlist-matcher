@@ -1,4 +1,7 @@
 from flask import Flask, request, url_for, session, redirect, render_template
+from flask_session import Session
+import os
+import uuid
 import time
 import spotipy
 import pandas as pd
@@ -7,13 +10,18 @@ import playlistmatch.playlistmatch as pm
 import jsonpickle
 
 app = Flask(__name__)
-app.secret_key = "VERYSECRET3892093029543042"
-app.config['SESSION_COOKIE_NAME'] = 'User Cookie'
-TOKEN_INFO = "Token here"
+app.config['SECRET_KEY'] = "VERYSECRET3892093029543042"
+app.config['SESSION_TYPE'] = 'filesystem'
+app.config['SESSION_FILE_DIR'] = './.flask_session/'
 MODEL = "no model yet initialized"
 PIDTONAME = "nothing yet"
 CURRENTTRACKID = "none"
+UUID = "default"
+Session(app)
 
+caches_folder = './.spotify_caches/'
+if not os.path.exists(caches_folder):
+    os.makedirs(caches_folder)
 
 def create_oauth():
     # TO DO: MAKE THE CLIENT SECRET PRIVATE AND PASS IN VIA SOME PARSING OF A GIT IGNORED FILE
@@ -25,7 +33,9 @@ def create_oauth():
         client_id='2b90b67f37914c32ad094916156f44aa',
         client_secret='c50524d981934e4c9e1dd88bcc2efacf',
         scope='playlist-read-private playlist-modify-private playlist-modify-public',
-        redirect_uri=url_for('redirectPage', _external=True)
+        redirect_uri=url_for('redirectPage', _external=True),
+        cache_handler=spotipy.cache_handler.CacheFileHandler(cache_path=session_cache_path()),
+        show_dialog=True
     )
 
 
@@ -34,7 +44,7 @@ def get_token():
     Retrieves the token currently stored in the user's cache, or generates a new one if needed
     :return: token_info for use in authorization
     """
-    token_info = session.get(TOKEN_INFO, None)
+    token_info = session.get('token_info', None)
     if not token_info:
         return url_for("authorize", _external=False)
     now = int(time.time())
@@ -46,19 +56,32 @@ def get_token():
     return token_info
 
 
-@app.route('/')
-def landingpage():
-    return render_template('index.html')
+def session_cache_path():
+    return caches_folder + session.get('UUID')
 
-@app.route('/authorize')
+
+@app.route('/')
 def authorize():
     """
     Begins the authorization pipeline
     :return: a redirect to the authorization link
     """
+    if not session.get('uuid'):
+        session['UUID'] = str(uuid.uuid4())
+
+    cache_handler = spotipy.cache_handler.CacheFileHandler(cache_path=session_cache_path())
     oauth = create_oauth()
-    oauth_url = oauth.get_authorize_url()
-    return redirect(oauth_url)
+
+    if request.args.get("code"):
+        oauth.get_access_token(request.args.get("code"))
+        return redirect('/')
+    
+    if not oauth.validate_token(cache_handler.get_cached_token()):
+        oauth_url = oauth.get_authorize_url()
+        return redirect(oauth_url)
+    
+    access = spotipy.Spotify(auth_manager=oauth)
+    return access.me()['display_name']
 
 
 @app.route('/redirect')
@@ -68,11 +91,10 @@ def redirectPage():
     :return: a redirect to the main function
     """
     oauth = create_oauth()
-    session.clear()
     code = request.args.get('code')
     token_info = oauth.get_access_token(code)
-    session[TOKEN_INFO] = token_info
-    return redirect(url_for('loadingscreen', _external=True))
+    session['token_info'] = token_info
+    return redirect(url_for('processuserdata', _external=True))
 
 @app.route('/loadingscreen')
 def loadingscreen():
@@ -87,8 +109,6 @@ def processuserdata():
     MAIN FUNCTION - DELEGATES WORK TO MODULES 2 AND 3
     :return: not yet clear *** fix ***
     """
-    token_info = get_token()
-    access = spotipy.Spotify(auth=token_info['access_token'])
 
     # return str(access.current_user_playlists(limit=50, offset=1000)['next'])
 
@@ -97,7 +117,9 @@ def processuserdata():
     # frozenmodel = jsonpickle.encode(pm.DataPipeline(allpackages))
     # session[MODEL] = frozenmodel
 
-
+    # token_info = get_token()
+    # access = spotipy.Spotify(auth=token_info)
+    # return access.me()['display_name']
     # Once model is generated, REDIRECT to a page
     # that allows the user to put in a song & get it added
     return render_template('landing.html')
@@ -124,9 +146,11 @@ def parse_playlist(pid, access, numsongs=100):
 
 @app.route('/predictandadd')
 def predictandadd():
-    token_info = get_token()
-    access = spotipy.Spotify(auth=token_info['access_token'])
-
+    cache_handler = spotipy.cache_handler.CacheFileHandler(cache_path=session_cache_path())
+    access = spotipy.Spotify(auth_manager = create_oauth())
+    
+    if not create_oauth().validate_token(cache_handler.get_cached_token()):
+        return redirect('/')
     # MODULE 2 WORK MOVED HERE
     allplaylists = []
     someplaylists = access.current_user_playlists(limit=50, offset=0)
