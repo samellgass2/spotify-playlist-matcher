@@ -6,20 +6,85 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <!-- Add any custom assets & styles here - specifically for media, formatting, & placement -->
+    <!-- <link href="css/mediadesignation" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/24f8ea27d7.js" crossorigin="anonymous"></script>
+
+
     <title>{% block title %} {% endblock %}</title>
   </head>
   <body>
     <!-- Building Top-of-screen link directory to rest of site -->
     <ul class="nav">
-        <li><a href="#href">Home</a></li>
-        <li><a href="https://github.com/samellgass2/university-projects">Projects</a></li>
-        <li><a href="https://samellgass.wixsite.com/samellgass">Music</a></li>
-        <li><a href=#href>Contact</a></li>
-    </ul>
-    <div style="height: 200px; background-color: white;"> </div>
+      <li ><a href="https:samellgass.com">Home</a></li>
+      <li ><a href="https://github.com/samellgass2/university-projects">Projects</a></li>
+      <li ><a href="https://samellgass.wixsite.com/samellgass">Music</a></li>
+      <li ><a href=#href>Contact</a></li>
+      <li style="float:right;"><a href="https://www.instagram.com/samellgass/"><i class="fab fa-instagram"></i></a></li>
+      <li style="float:right;"><a href="https://www.linkedin.com/in/samuel-ellgass-a54a571b5/"><i class="fab fa-linkedin"></i></a></li>
+      <li style="float:right;"><a href="https://linktr.ee/samellgassmusic"><i class="fas fa-music"></i></a></li>
+      <li style="float:right;"><a href="https://open.spotify.com/artist/6LGdua6MNpMpygz9U5Skn5?si=WA19kI0sS0WXeG9NPIzchA"><i class="fab fa-spotify"></i></a></li>
+  </ul> 
+
+  <div class="moving">
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+
+      <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+        <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+        <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+        <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+        <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+        <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+    <image src={{url_for('static', filename = "images/spotifylogo.png")}}>
+</div>
+
     <div class="container">
         {% block content %} {% endblock %}
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
   </body>
 </html>

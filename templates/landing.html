@@ -1,19 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-        <h1> {% block title %} You Have Successfully Signed In and the app has processed your playlists.{% endblock %}</h1>
+<h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" style="font-size:50px; margin-top:8%;"> {% block title %}Spotify Playlist Matcher {% endblock %}</h1>
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out"> You Have Successfully Signed In and the app has processed your playlists.</h1>
         <!-- HERE WILL EXIST A TEXT BOX THAT, UPON RECEIVING A VALID SPOTIFY URL, WILL RUN THE PREDICTION ENGINE-->
-        <h1> Paste the URL of a Spotify song to see which playlists it best fits in!</h1>
-        <form action="{{ url_for('predictandadd') }}" method="get" target="_self">
-            <label for="trackurl">Track URL</label>
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out"> Paste the URL of a Spotify song below to see which of your playlists it best fits in!</h1>
+        <form action="{{ url_for('predictandadd') }}" method="get" target="_self" style="font-size: 24px; margin:auto; height:20%; width: 60%;" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out">
+            <label style="background-color:white; opacity:0.85;" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" for="trackurl">Track URL</label>
             <br>
-            <input type="text" id="trackurl" name="trackurl"
+            <input data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" type="text" id="trackurl" name="trackurl"
                     placeholder="Type track URL here">
+        <div style="height:5%;"></div>
+            <label style="background-color:white; opacity:0.85;" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" for="num">Number of Playlists to Show</label>
             <br>
-            <label for="num">Number of Playlists to Show</label>
-            <br>
-            <input type="text" id="num" name="num"
+            <input data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" type="text" id="num" name="num"
                     value="5">
-            <input type="submit" value="Match">
+        <div style="height:5%;"></div>
+            <label data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" for="type" style="background-color:white; opacity:0.85;">What do you want to match by?</label>
+            <br>
+            <select data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" id="type" name="type">
+                    <option value="all">Everything</option>
+                    <option value="vibe">Vibe and Feel</option>
+                    <option value="tempo">Tempo and Beat</option>
+                    <option value="liveness">Acousticness</option>
+            </select>
+            <div style="height:5%;"></div>
+            <input type="submit" value="Match"  data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-out" style="background-color:rgba(30, 215, 95, 0.907);">
         </form>
 {% endblock %}
